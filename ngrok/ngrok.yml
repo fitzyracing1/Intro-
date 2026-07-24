@@ -1,0 +1,19 @@
+version: "3"
+agent:
+  authtoken: ${NGROK_AUTHTOKEN}
+tunnels:
+  3xb-api:
+    proto: http
+    addr: 8080
+  persona-mcp:
+    proto: http
+    addr: 8081
+  asset-ledger-mcp:
+    proto: http
+    addr: 8082
+  ect-node:
+    proto: http
+    addr: 8083
+  ssh:
+    proto: tcp
+    addr: 22
